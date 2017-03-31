@@ -12,8 +12,11 @@ function crearLista(event) {
 	///////////propiedades de los elementos ////
 	cajaPendientes.type = "text";
 	botonPendientes.type = "submit";
+	botonPendientes.className = "btn btn-success";
 	borrarLista.innerHTML = "Eliminar Lista";
 	borrarLista.type = "button";
+	borrarLista.className = "btn btn-danger";
+	botonPendientes.className = "btn btn-success";
 	botonPendientes.onclick = agregarPendientes;
 	botonPendientes.innerHTML = "Agregar Pendientes";
 	///les asignamos lo que van a atener///
@@ -28,6 +31,7 @@ function crearLista(event) {
 	contenedor.appendChild(seccion);
 
 }
+
 function borrarListas(){
 	this.parentElement.remove();
 }
@@ -44,8 +48,10 @@ function agregarPendientes(event){
 	var botonEditar = document.createElement('button');
 	///agregar propiedades a los elemntos
 	botonEliminar.type = "button";
+	botonEliminar.className = "btn btn-danger";
 	botonEliminar.innerHTML = "X"
 	botonEditar.type = "button";
+	botonEditar.className = "btn btn-info";
 	botonEditar.innerHTML = "Editar";
 
 
